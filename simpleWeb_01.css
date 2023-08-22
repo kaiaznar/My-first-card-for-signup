@@ -1,0 +1,120 @@
+html{
+    box-sizing: border-box;
+}
+*,*:before,*:after{
+    box-sizing: inherit;
+}
+
+body{
+    font-size: 16px;
+    background-color: #B7B7E788;
+    font-family: 'Karla', sans-serif;
+}
+
+h1,h2,h3,h4,h5,p{
+    margin: 0;
+    padding-bottom: 15px;
+}
+
+.textFlex{
+    display: flex;
+}
+.textFlex_1{
+    font-weight: 700;
+    font-size: 40px;
+}
+.textFlex_2{
+    padding-left: 20px;
+    margin-top: 17px;
+    color: #e5eff5;
+    font-weight: 400;
+}
+ul{
+    color: #e5eff5;
+    font-weight: 400;
+    list-style-type: none;
+    padding: 0;
+}
+
+h1{
+   color: #2ab2af; 
+}
+#subTitle{
+    color: #c0df34;
+}
+#pTextUp{
+    color: #98a6bd;
+}
+
+.bigBox{
+    box-shadow: 7px 3px 13px 3px rgba(0,0,0,0.32); /* I used a box shadow generator for css*/
+    border-radius: 8px;
+    overflow: hidden; /*this one make everything that overflow the container dont show*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    width: 40vw;
+    height: 55vh;
+    
+}
+
+.topBox{
+    height:45%;
+    
+}
+
+.bottomBox{
+    color: white;
+    height: 55%;
+    display: flex;
+    position:relative;
+}
+
+
+.bB1{
+    background-color:#2ab2af;
+}
+
+.bB2{
+    position: absolute;
+    left: 50%;
+    background-color:#2ab2afdd ;
+}
+
+
+
+.topBox,.bottomBox{
+    width: 100%;
+}
+
+.bB1, .bB2{
+    width: 50%;
+    height: 100%;
+}
+
+.topBox,.bB1,.bB2{
+    padding: 35px;
+}
+
+button{
+    margin: 20px;
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #2ab2af;
+    text-align: center;
+    width: 80%;
+    height: 25%;
+    color: white;
+    background-color: #c0df34;
+    border-radius: 6px;
+    box-shadow: 10px 10px 16px -7px rgba(0,0,0,0.3);
+    
+}
+button:hover{
+    cursor: pointer;
+    font-size: 20px;
+    background-color: #c0df34dd;
+    box-shadow: 10px 10px 20px 7px rgba(0,0,0,0.64);
+}
