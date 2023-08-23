@@ -6,9 +6,12 @@ html{
 }
 
 body{
+    margin: 0;
     font-size: 16px;
     background-color: #B7B7E788;
     font-family: 'Karla', sans-serif;
+    width: 100vw;
+    height: 100vh;
 }
 
 h1,h2,h3,h4,h5,p{
@@ -37,9 +40,11 @@ ul{
 }
 
 h1{
+    font-size: 1.6rem;
    color: #2ab2af; 
 }
 #subTitle{
+    font-size: 1.2rem;
     color: #c0df34;
 }
 #pTextUp{
@@ -47,40 +52,44 @@ h1{
 }
 
 .bigBox{
-    box-shadow: 7px 3px 13px 3px rgba(0,0,0,0.32); /* I used a box shadow generator for css*/
-    border-radius: 8px;
-    overflow: hidden; /*this one make everything that overflow the container dont show*/
-    position: absolute;
-    top: 50%;
+    position: relative;
     left: 50%;
-    transform: translate(-50%,-50%);
-    background-color: white;
-    width: 40vw;
-    height: 55vh;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    transform: translate(-50%,0);
+    border-radius: 8px; 
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     
 }
 
 .topBox{
-    height:45%;
-    
+    flex-basis: 30%;
+    background-color: white;
+    box-shadow: 7px 3px 13px 3px rgba(0,0,0,0.32);
+    margin-bottom: 20px;
 }
 
 .bottomBox{
+    flex-basis: 70%;
     color: white;
-    height: 55%;
     display: flex;
-    position:relative;
+    flex-direction: column;
 }
 
 
 .bB1{
     background-color:#2ab2af;
+
+    box-shadow: 7px 3px 13px 3px rgba(0,0,0,0.32);
 }
 
 .bB2{
-    position: absolute;
-    left: 50%;
     background-color:#2ab2afdd ;
+    box-shadow: 7px 3px 13px 3px rgba(0,0,0,0.32);
 }
 
 
@@ -90,12 +99,13 @@ h1{
 }
 
 .bB1, .bB2{
-    width: 50%;
-    height: 100%;
+
+    flex-basis: 50%;
+    margin-bottom: 20px;
 }
 
 .topBox,.bB1,.bB2{
-    padding: 35px;
+    padding: 25px;
 }
 
 button{
@@ -117,4 +127,83 @@ button:hover{
     font-size: 20px;
     background-color: #c0df34dd;
     box-shadow: 10px 10px 20px 7px rgba(0,0,0,0.64);
+}
+
+@media (min-width:700px){
+    
+    
+    
+    .bigBox{
+        box-shadow: 7px 3px 13px 3px rgba(0,0,0,0.32); /* I used a box shadow generator for css*/
+        border-radius: 8px;
+        overflow: hidden; /*this one make everything that overflow the container dont show*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 60vw;
+        height: 65vh;
+        
+        
+    }
+    
+    .topBox{
+        flex-basis: 60%;
+        margin: 0;
+        box-shadow:0;
+    }
+    
+    .bottomBox{
+        flex-basis: 40%;
+        flex-direction: row;
+        position:relative;
+    }
+    
+    .bB1, .bB2{
+        box-shadow:0;
+        margin: 0;
+    }
+    
+    .topBox,.bB1,.bB2{
+        padding: 35px;
+    }
+    
+    
+}
+
+@media (min-width:1150px){
+    .bigBox{
+        box-shadow: 7px 3px 13px 3px rgba(0,0,0,0.32); /* I used a box shadow generator for css*/
+        border-radius: 8px;
+        overflow: hidden; /*this one make everything that overflow the container dont show*/
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 40vw;
+        height: 55vh;
+        
+        
+    }
+    
+    .topBox{
+        flex-basis: 60%;
+        margin: 0;
+        box-shadow:0;
+    }
+    
+    .bottomBox{
+        flex-basis: 40%;
+        flex-direction: row;
+        position:relative;
+    }
+    
+    .bB1, .bB2{
+        box-shadow:0;
+        margin: 0;
+    }
+    
+    .topBox,.bB1,.bB2{
+        padding: 35px;
+    }
 }
